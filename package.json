@@ -1,0 +1,32 @@
+{
+  "name": "ot-server",
+  "version": "1.0.0",
+  "description": "The line-based implementation of operational transform",
+  "homepage": "https://github.com/otjs/ot-server",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/otjs/ot-server.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "operational",
+    "transform",
+    "diff"
+  ],
+  "author": "Luin",
+  "license": "MIT",
+  "dependencies": {
+    "node-uuid": "^1.4.2",
+    "otjs": "^1.0.0",
+    "redis": "^0.12.1",
+    "redis-lock": "0.0.9"
+  },
+  "devDependencies": {
+    "async": "^0.9.0",
+    "chai": "^1.10.0",
+    "mocha": "^2.1.0"
+  }
+}
