@@ -37,9 +37,9 @@ describe('test features', function() {
 var features = [
   {
     base: [
-      { type: 'add', line: 0, content: 'c' },     // c
-      { type: 'add', line: 0, content: 'b' },     // bc
-      { type: 'add', line: 0, content: 'a' },     // abc
+      { type: 'add', line: 0, text: 'c' },     // c
+      { type: 'add', line: 0, text: 'b' },     // bc
+      { type: 'add', line: 0, text: 'a' },     // abc
     ],
     server: {
       version: 3,
@@ -52,16 +52,16 @@ var features = [
     client: {
       version: 3,
       changes: [
-        { type: 'add', line: 0, content: '0' },   // 0abc
-        { type: 'add', line: 2, content: '2' },   // 0a2bc
-        { type: 'add', line: 4, content: '4' },   // 0a2b4c
+        { type: 'add', line: 0, text: '0' },   // 0abc
+        { type: 'add', line: 2, text: '2' },   // 0a2bc
+        { type: 'add', line: 4, text: '4' },   // 0a2b4c
       ]
     },
     expect: {
       client: [
-        { type: 'add', line: 0, content: '0' },   // 0
-        { type: 'add', line: 1, content: '2' },   // 02
-        { type: 'add', line: 2, content: '4' },   // 024
+        { type: 'add', line: 0, text: '0' },   // 0
+        { type: 'add', line: 1, text: '2' },   // 02
+        { type: 'add', line: 2, text: '4' },   // 024
       ],
       server: [
         { type: 'del', line: 1 },                 // 02b4c

@@ -44,11 +44,11 @@ describe('Instance', function() {
         _this.instance.batch([{
           type: 'add',
           line: 7,
-          content: 'test'
+          text: 'test'
         }, {
           type: 'add',
           line: 6,
-          content: 'test'
+          text: 'test'
         }, {
           type: 'del',
           line: 6
@@ -70,11 +70,11 @@ describe('Instance', function() {
         var actions = [{
           type: 'add',
           line: 7,
-          content: '7'
+          text: '7'
         }, {
           type: 'add',
           line: 6,
-          content: '6'
+          text: '6'
         }, {
           type: 'del',
           line: 8
@@ -84,7 +84,7 @@ describe('Instance', function() {
           otherInstance.batch([{
             type: 'add',
             line: 5,
-            content: '5'
+            text: '5'
           }, {
             type: 'del',
             line: 4
@@ -105,11 +105,11 @@ describe('Instance', function() {
       instance.batch([{
         type: 'add',
         line: 7,
-        content: 'test'
+        text: 'test'
       }, {
         type: 'add',
         line: 6,
-        content: 'test'
+        text: 'test'
       }, {
         type: 'del',
         line: 6
